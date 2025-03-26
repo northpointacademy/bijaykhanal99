@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>North Point Academy</title>
+    <style type="text/css" media="all">
+
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="top">
+        <div class="logo">
+         <img src="logo.png" alt="logo" />
+        </div>
+        <div class="option">
+          <ul class="ul">
+            <li><a href="#"><i class="fa-solid fa-users"></i> Staff</a></li>
+            <li><a href="#"><i class="fa-solid fa-image"></i> Gallery</a></li>
+            <li><a href="https://bijaykhanal08.github.io/bijaykhanal088/card.html"><i class="fa-solid fa-cake-candles"></i> Birthday</a></li>
+            <li><a href="congrats.html"><i class="fa-solid fa-medal"></i> Congratulations</a></li>
+
+          </ul>
+          <button type="submit" onclick="back()"><i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+      </div>
+   <hr />
+   <div class="notice">
+   <marquee behavior="" direction="">  Click on logo to activate the options.</marquee>
+   </div>
+   <div class="hero">
+     <div class="content">
+       <h1>Welcome ! to our website</h1>
+       <h2>North Point Academy</h2>
+       <h5>Buddhabhumi-1, Pattharkot, Kapilvastu</h5>
+       <p>Estd.:- 2054</p>
+       <ul>
+         <a href="tel: 97949948">
+        <i class="fa-solid fa-phone"></i>
+           <p>Call</p>
+         </a>
+         <a href="mailto: npabuddhabatika16@gmail.com">
+           <i class="fa-solid fa-envelope-open-text"></i>
+          <p>Mail</p>
+         </a>
+       </ul>
+     </div>
+   </div>
+   <div id="about">
+     <h4><i class="fa-solid fa-rectangle-list"></i> About</h4>
+     <hr />
+     <p id="aboutText" class="typing-js">
+       </p>
+   </div>
+   <div id="contact">
+     <h4><i class="fa-solid fa-envelopes-bulk"></i> Contact</h4>
+     <hr />
+     <div class="grid">
+       <div class="email">
+                    <i class="fa-solid fa-envelope-open-text"></i> 
+         
+           <p> npabuddhabatika16@gmail.com</p>
+           
+       </div>
+       <div class="call">
+                 <i class="fa-solid fa-phone"></i>
+        <p> 9788477749</p>
+       </div>
+     </div>
+   </div>
+    </section>
+    <footer>
+      &copy; bijaykhanal.99 || All rights reserved
+      <br />
+      
+    </footer>
+  <script type="text/javascript" charset="utf-8">
+    let logo = document.querySelector('.logo');
+   let ul = document.querySelector('.ul');
+logo.addEventListener('click',()=>{
+  ul.classList.toggle("active");
+});
+  </script>
+  <script type="text/javascript" charset="utf-8">
+    const text = "Warm greeting to everyone North point Academy is located at the northern part of Kapilvastu district in the Buddhabhumi municipality ward no 1. The main aim of this institute is to provide quality education. Our focus is always for the holistic development of the child to make him/her perfect citizen who can easily adjust his life in any situation. Our school always strive hard to make the best possible effort for providing self-reliant student.";
+    const typingElement = document.getElementById("aboutText");
+    let charIndex = 0;
+
+    function type() {
+      if (charIndex < text.length) {
+        typingElement.innerHTML += text.charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 50); // Adjust speed here (milliseconds)
+      } else {
+        // Optionally, add a blinking cursor after typing is complete:
+        typingElement.style.borderRight = '.15em solid orange';
+        function blinkCursor(){
+            if(typingElement.style.borderRight === '.15em solid orange'){
+                typingElement.style.borderRight = 'transparent';
+            }else{
+                typingElement.style.borderRight = '.0em solid orange';
+            }
+        }
+        setInterval(blinkCursor, 750);
+      }
+    }
+
+    type();
+  </script>
+  <script type="text/javascript" charset="utf-8">
+            function back() {
+          window.history.back();
+        }
+  </script>
+  </body>
+</html>

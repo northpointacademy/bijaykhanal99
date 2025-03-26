@@ -1,0 +1,220 @@
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: skyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-family: sans-serif, tahoma;
+}
+.main{
+  position: relative;
+  margin-top: 10px;
+  height: 400px;
+  width: 400px;
+  background: url('bggg.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  border-radius:10px;
+  border:2px solid cornflowerblue;
+}
+.main #imgbox{
+  position: absolute;
+
+  top: 30%;
+  left:8%;
+  
+
+  
+  z-index: 1;
+}
+#imgbox img{
+  position: relative;
+  height: 168px;
+  width: 168px;
+  border:3px solid red;
+  outline:2px solid blue;
+
+  height: 170px;
+  width: 170px;
+  
+}
+.main h1{
+  position: absolute;
+left:15%;
+  top: 75%;
+  font-size: 20px;
+
+  padding: 5px 10px;
+
+  color: darkgoldenrod;
+
+}
+.main p {
+  position: absolute;
+left:15%;
+  top: 82%;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: cornflowerblue;
+  letter-spacing:3px;
+}
+.main h5 {
+  position: absolute;
+left: 55%;
+  top: 28%;
+  font-size: 100px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: Blue;
+
+}
+.mainx {
+  position: relative;
+  margin-top: 10px;
+  height:auto;
+  width: 400px;
+  background: skyblue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  border: 2px solid cornflowerblue;
+  overflow: hidden;
+}
+.mainx h1{
+  color: red;
+  padding: 2px;
+}
+.mainx .edit{
+  display: grid;
+  padding: 5px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3,1fr);
+}
+.mainx h4{
+  color: cornflowerblue;
+  margin: 5px;
+}
+.main #qrcode{
+  position: absolute;
+  bottom: 37px; right: 15px;
+}
+.edit select{
+  width: 100px;
+  padding: 3px 5px;
+  border: 2px solid gold;
+  background: #fff;
+  border-radius: 4px;
+  outline: none;
+}
+.edit input{
+  width: 100px;
+  padding: 3px 5px;
+  border: 2px solid gold;
+  background: #fff;
+  border-radius: 4px;
+  outline: none;
+}
+.selectimg{
+  position: relative;
+ padding: 0;
+ margin:5px;
+ border: 2px solid cornflowerblue;
+ height: 100px;
+ border-radius: 10px;
+ border-style: dotted;
+}
+.selectimg input{
+  border: 2px solid red;
+  width: 100%;
+  height: 100px;
+  opacity: 0;
+   border-radius: 10px;
+
+}
+.selectimg p{
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) ;
+  color: cornflowerblue;
+}
+input:focus, select:focus{
+  border: 2px solid cornflowerblue;
+}
+.selectimg:hover{
+  border:2px solid cornflowerblue;
+   border-style: dashed;
+
+}
+.button{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+}
+.button button{
+  width: 150px;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+button:nth-child(1){
+  color: red;
+  border: 2px solid red;
+  background: transparent;
+  outline: none;
+}
+button:nth-child(even) {
+  color: #fff;
+  border: none;
+  background:cornflowerblue;
+  outline: none;
+}
+.down{
+  width: 100%;
+  padding: 5px;
+}
+.down button{
+  background: lightcoral;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 15px 5px;
+  width: 100%;
+  cursor: pointer;
+}
+.radius{
+  margin-left: 5px; color: red;
+}
+#crop-button{
+  padding: 15px;
+  background: red;
+  color: #fff;
+  width: 100%;
+}
+
+#rangeValue, #rangeValues{
+  margin-left: 5px; color: red;
+font-weight:bold;
+}
+@media screen and (min-width: 768px){
+  body{
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 2%;
+  }
+  .edit input, .edit select{
+    width: 200px;
+  }
+  .mainx{
+    width: 650px;
+  }
+}
