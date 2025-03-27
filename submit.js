@@ -7,7 +7,7 @@
       
       // Display full name and batch
       document.querySelector('#fullname').innerHTML = mrms + " " + fname;
-      document.querySelector('#posts').innerHTML = post + " Batch " + date;
+      document.querySelector('#posts').innerHTML = post + " Student " + date;
       
       // Convert lname to a number
       lname = parseFloat(lname);
