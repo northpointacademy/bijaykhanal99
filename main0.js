@@ -62,13 +62,13 @@ function position(){
       }
 
 
-      document.getElementById('Down').addEventListener('click', function() {
-  const card = document.querySelector('.result');
-  html2canvas(card).then(canvas => {
-    const link = document.createElement('a');
-    const timestamp = new Date().getTime(); // Generate a unique timestamp
-    link.href = canvas.toDataURL('image/png');
-    link.download = `birthday_card_${timestamp}.png`; // Use the timestamp in the download link
-    link.click();
-  });
-});
+      document.getElementById('Down').addEventListener('click', function () {
+      const card = document.querySelector('.result');
+      html2canvas(card).then(canvas => {
+        const link = document.createElement('a');
+        const timestamp = new Date().getTime();
+        link.href = canvas.toDataURL('image/png');
+        link.download = `birthday_card_${timestamp}.png`;
+        link.click();
+      });
+    });
