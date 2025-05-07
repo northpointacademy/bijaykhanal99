@@ -1,0 +1,307 @@
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #111; /* Dark background for neon effect */
+        color: #fff;
+      }
+
+      .upper {
+        background-color: #222;
+        color: white;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #333;
+      }
+
+      .logo h2 {
+        margin: 0;
+        color: #0ff; /* Cyan neon color */
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+      }
+
+      .notice {
+        text-align: center;
+        width: 800px;
+      }
+
+      .notice h4 {
+        margin-bottom: 5px;
+        color: #fff; /* Magenta neon color */
+       margin: 0;
+
+      }
+
+      .notice marquee {
+        color: #fff; /* Green neon color */
+        margin: 0;
+      }
+
+      .buttons button {
+        padding: 10px 15px;
+        margin-left: 10px;
+        border: 1px solid #444;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        background-color: #333;
+        color: #fff;
+        box-shadow: 0 0 5px #fff; /* Subtle white glow */
+      }
+
+      .buttons button:first-child {
+        background-color: #0f0; /* Green neon */
+        color: #fff;
+        text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+        border-color: #0f0;
+      }
+
+      .buttons button:last-child {
+        background-color: #f00; /* Red neon */
+        color: #fff;
+        text-shadow: 0 0 5px #f00, 0 0 10px #f00;
+        border-color: #f00;
+      }
+
+      .top {
+        background-color: #222;
+        padding: 10px;
+        display: flex;
+    width: 90%;
+        align-items: flex-start;
+        border-right: 1px solid #333;
+      }
+
+      .top li {
+        list-style: none;
+        padding: 8px 15px;
+        margin: 0;
+        cursor: pointer;
+        color: #0ff; /* Cyan neon */
+        text-shadow: 0 0 5px #0ff;
+      }
+
+      .top hr {
+        width: 2px;
+        height: 13px;
+        border:none;
+      background: #0ff;
+      }
+
+      .top li:hover {
+        background-color: #333;
+        color: #fff;
+        text-shadow: 0 0 5px #fff;
+      }
+.result{
+  position: absolute;
+  top: 65%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  border-radius: 10px;
+  color: #000;
+  overflow: hidden;
+  border: 2px solid gold;
+}
+.result img{
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.result h1{
+  position: absolute;
+  color: #fff;
+  top: 70%;
+  left: 5%;
+  font-size: 1.25vw;
+  background:transparent;
+  padding: 2px 5px;
+  width: 45%;
+
+ }
+.result h4 {
+  position: absolute;
+  color: deepskyblue;
+  top: 77%;
+  left: 5%;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 2px 5px;
+  background:transparent;
+
+}
+.result h5 {
+  position: absolute;
+  color: gold;
+  
+  bottom: -2%;
+  right: 5%;
+  font-size: 10px;
+}
+.result #img{
+  width: 200px;
+  z-index: 1;
+  border-radius: 50%;
+  right: 1.5%;
+  top: 23%;
+  border: 2px solid darkgoldenrod;
+}
+#form{
+  position: absolute;
+background-color: #fff;
+width: 350px;
+padding: 2px; border-radius: 10px; display: none;
+}
+#form h2{
+  color: red;
+  text-align: center; margin: 0;
+}
+#staff{
+  display: none;
+} 
+#form p{
+  color: #333; text-align: center; margin: 0; font-weight: bold;
+}
+#form button{
+  width: 100%; cursor: pointer; background: grey; padding: 4px; color: #000; border-radius: 4px; outline : none;
+}
+#form button:hover{background: #fff;}
+#form .formgrid{
+  display: grid; grid-gap: 10px; grid-template-columns: repeat(2, 1fr);
+}
+#form .formgrid input, #form .formgrid select{
+  width: 150px;
+  border-radius: 4px; border: 2px solid #333; outline: none;
+}
+#form .fileup{
+ position: relative; height: 100px; border: 2px solid #333; border-radius: 5px; border-style: dotted; overflow: hidden;
+}
+#form .fileup input{
+  width: 100%;
+  height: 100px;
+  opacity: 0;z-index: 1;
+}
+#form .fileup p{
+position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);pointer-events: none; font-size: 4rem;
+}
+#form .fileup h6{
+position: absolute; top: 53%; left: 50%; transform: translate(-50%, -50%);pointer-events: none; font-size: 16px; color: #000;
+ width: 100%; text-align: center;}
+#form span,.other span, .templetes span{
+    position: absolute;
+  top: 0%;right: 2%;
+  background: red;
+  width: 40px;
+  height: 40px;
+  border: none; outline: none;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.color{
+  display: none;
+  background: skyblue;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  width: 200px;
+  position:absolute;
+  left: 5%;
+  border-radius: 5px;
+  padding-bottom: 2px;
+}
+
+
+.color h3{
+  border-bottom: 2px solid #fff;
+}
+.color h2{
+  color: cornflowerblue;
+  border-bottom: 2px solid cornflowerblue;
+}
+.color button, .fonts button, .size button{
+  position: absolute;
+  top: 0%;right: 2%;
+  background: red;
+  width: 40px;
+  height: 40px;
+  border: none; outline: none;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.color input{
+  width: 90%;
+  height: 50px;
+  cursor: pointer;
+}
+.fonts{
+  display: none;
+  background-color: skyblue;
+  width: 200px;
+  position: absolute;
+  right: 5%; padding: 5px;
+  border-radius: 5px;
+}
+.fonts select{
+  border: 2px solid #fff; background: transparent; outline: none; color: #000; padding: 3px; border-radius: 4px; 
+}
+.other{
+  width: 200px; display: none;
+  position: absolute; right: 5%; background: skyblue; border-radius: 5px; padding: 6px;
+}
+.other .otherflex, .other .otherflexx{
+  display: grid; grid-gap: 10px; grid-template-columns: repeat(3, 1fr);
+}
+.other .otherflex button, .other .otherflexx button{padding: 5px; background: #fff; color: cornflowerblue; border-radius: 10px; border: none; outline: none; cursor: pointer;}
+.other .otherflex button:hover, .other .otherflexx button:hover{background: cornflowerblue; color: #fff;}
+.templetes{
+  width: 350px; display: none;
+  position: absolute; left: 5%; padding: 5px 1px;
+  border: 2px solid #fff; border-radius: 7px; background: #333;
+}
+.templetes ul{ position: relative;
+  display: grid; grid-gap: 15px; grid-template-columns: repeat(1, 1fr); margin: 0;
+}
+.templetes ul li{ position: relative;
+  list-style: none; padding: 5px;  border: 2px solid #fff; border-radius: 7px; display: flex; width: 90%; margin: 0;cursor: pointer;font-size: 15px;display: flex;align-items: center;justify-content: space-between;
+}
+.templetes ul li .imgbox{
+  width: 50px; height: 50px; overflow: hidden; border-radius: 50%; border: 2px solid #fff;
+}
+.templetes ul li .imgbox img{width: 50px;} 
+.templetes ul li:hover{border-color:skyblue; background: #111; color: skyblue;}
+.templetes ul li:hover .imgbox{
+  border-color:skyblue;
+}
+#cropperModal button{
+    padding: 15px 6px;
+    font-size: 2em;
+    width: 99%;
+    color: #fff;
+    background: transparent;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.9s ease-in-out;
+}
+.size{
+  width: 20%;
+  position: absolute;
+  left: 5%;
+  background: #ddd;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px;
+display: none;
+}

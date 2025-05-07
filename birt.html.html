@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bijay</title>
+    <link rel="stylesheet" href="style.css" title="" type="" />
+ <link rel="website icon" type="png" href="imgs/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <link href="https://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/css/nepali.datepicker.v4.0.1.min.css" rel="stylesheet" type="text/css" />
+ <link href="/path/to/local/nepali.datepicker.min.css" rel="stylesheet" type="text/css" />
+ <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+  </head>
+  <body>
+
+    <!-- upper part -->
+
+    <div class="upper">
+      <div class="logo">
+        <h2>Bijay99</h2>
+      </div>
+      <div class="notice">
+        <h4>Notice :</h4>
+        <marquee behavior="scroll" direction="right">
+       <p>Download :- <i class="fa-solid fa-cloud-arrow-down"></i>, Back :- <i class="fa-solid fa-arrow-right"></i></p>
+        </marquee>
+      </div>
+      <div class="buttons">
+
+     <button type="submit" id="Down"><i class="fa-solid fa-cloud-arrow-down"></i></button>
+     <button type="submit"><i class="fa-solid fa-arrow-right"></i></button></div>
+
+    </div>
+    <hr />
+
+    <!-- options -->
+
+   <div class="top">
+   <hr /><li onclick="openform()"><i class="fa-solid fa-paperclip"></i> Form</li><hr />
+
+   <li onclick="opencolor()"><i class="fa-solid fa-palette"></i> Colours</li><hr />
+   <li onclick="openfonts()"><i class="fa-solid fa-font"></i> Fonts</li><hr />
+<li onclick="openother()"><i class="fa-solid fa-bold"></i> Other Style</li> <hr>
+<li onclick="opentemp()"><i class="fa-solid fa-list"></i> Templetes</li><hr>
+<li onclick="opensize()"><i class="fa-solid fa-maximize"></i> Size</li><hr>
+
+   </div>
+   
+   <hr />
+
+   <!-- card -->
+
+   <div class="result">
+     <img src="bg.jpg" alt="bg" id="ap" />
+     <img src="img.jpg" alt="img" id="img" />
+     <h1>Mr. Bijay Khanal</h1>
+     <h4>Teacher</h4>
+     <h5>Bs. 2082-03-31</h5>
+   </div>
+
+  <!-- forms-->
+
+  <div id="form">
+    <h2>Form</h2>
+<p>Fill here...</p>
+    <hr>
+    <div class="formgrid">
+    <input type="text" name="" list="gender" placeholder="Mr. / Miss. / Mrs." id="genders">
+    <datalist id="gender">
+      <option value="Mr.">Mr.</option>
+      <option value="Miss.">Miss.</option>
+      <option value="Mrs.">Mrs.</option>
+    </datalist>
+    <input type="text" name="" placeholder="Full Name" id="fullname">
+    <input type="text" name="" list="post" placeholder="Staff / Students" id="position" oninput="position()">
+    <datalist id="post">
+      <option value="Staff">Staff</option>
+    </datalist>
+<input type="text" name="" placeholder="Class..." id="student" list="cls">
+<datalist id="cls">
+  <option>Child-Play</option>
+  <option>Nursery</option>
+  <option>LKG</option>
+  <option>UKG</option>
+  <option>One</option>
+  <option>Two</option>
+  <option>Three</option>
+  <option>Four</option>
+  <option>Five</option>
+  <option>Six</option>
+  <option>Seven</option>
+  <option>Eight</option>
+  <option>Nine</option>
+  <option>Ten</option>
+</datalist>
+<input type="text" name="" placeholder="Post..." id="staff" list="stff">
+<datalist id="stff">
+  <option>Teacher</option>
+  <option>Principal</option>
+  <option>Vice-Principal</option>
+  <option>IT Co-ordinator</option>
+  <option>Accountant</option>
+  <option>Guard</option>
+  <option>Office Assistant</option>
+  <option>Bus Driver</option>
+  <option>Bus Helper</option>
+</datalist>
+
+<select id="section">
+
+ <optgroup label="Child-Play">
+  <option>Kopila</option></optgroup>
+ <optgroup label="Nursery"> <option>Sun</option>
+  <option>Moon</option></optgroup>
+ <optgroup label="LKG"> <option>Munal</option>
+  <option>Mayur</option></optgroup>
+   <optgroup label="UKG">
+  <option>Dhaulagiri</option>
+  <option>Ratnagiri</option>
+  <option>Nilgiri</option></optgroup>
+  <optgroup label="One"><option>Lotus</option>
+  <option>Rose</option></optgroup>
+<optgroup label="Two"> <option>Rara</option>
+  <option>Begnas</option></optgroup> 
+ <optgroup label="Three"><option>Mars</option>
+  <option>Jupiter</option></optgroup> 
+ <optgroup label="Four"><option>Peacock</option>
+  <option>Lophophorous</option></optgroup>
+ <optgroup label="Five"><option>Sagarmatha</option>
+  <option>Kanchenjungha</option></optgroup> 
+  <optgroup label="Six to Ten"><option>A</option></optgroup>
+</select>
+<input type="text" name="" placeholder="Date..." id="dates">
+  </div><br><hr><br><div class="fileup"> <p><i class="fa-solid fa-image"></i></p><h6>Upload Image</h6>
+<input type="file" name="" id="upimage"></div><br><hr><br>
+  <button onclick="submit()">Submit</button>
+  <span onclick="closeform()">×</span>
+     </div>
+   <!-- croper -->
+    <div id="cropperModal" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 20px; z-index: 1000; border-radius: 10px; max-width: 80%; max-height: 80%;">
+   <div style="max-width: 300px; max-height: 300px; overflow: hidden; margin: 0 auto;">
+     <img id="cropperImage" src="" style="max-width: 100%; display: block;">
+   </div>
+   <div style="text-align: center; margin-top: 15px;">
+     <button id="cropButton" style="padding: 10px 20px; margin-right: 10px; color: cornflowerblue;">
+       <i class="fa-solid fa-crop"></i> 
+       Crop</button>
+     <button id="cancelCrop" style="padding: 10px 20px; color: red;">
+       <i class="fa-solid fa-circle-xmark"></i> 
+       Cancel</button>
+   </div>
+ </div>
+
+
+
+   <!-- edits -->
+   <div class="color">
+     <h3><i class="fa-solid fa-palette"></i> Colours</h3>
+   <h2>Name</h2>
+<input type="color" name="" id="ncolor" value="" />
+     <h2>Class / Position</h2>
+<input type="color" name="" id="cpcolor" value="" />
+
+     <button type="submit" onclick="closecolor()">×</button>
+
+   </div>
+
+   <!-- fonts -->
+
+   <div class="fonts">
+     <h3><i class="fa-solid fa-font"></i> Fonts</h3><hr>
+     <h2>Name</h2>
+  <select id="fontss">
+  <optgroup label="Normal">
+    <option value="arial">Arial</option>
+  <option value="helvetica">Helvetica</option>
+  <option value="times-new-roman">Times New Roman</option>
+  <option value="georgia">Georgia</option>
+  <option value="verdana">Verdana</option>
+  <option value="tahoma">Tahoma</option>
+  <option value="trebuchet-ms">Trebuchet MS</option>
+  <option value="palatino">Palatino</option>
+  <option value="garamond">Garamond</option>
+  <option value="courier-new">Courier New</option>
+  </optgroup>
+  <optgroup label="Cursive">
+     <option value="brush-script-mt">Brush Script MT</option>
+  <option value="lucida-handwriting">Lucida Handwriting</option>
+  <option value="segoe-script">Segoe Script</option>
+  <option value="pacifico">Pacifico</option>
+  <option value="dancing-script">Dancing Script</option>
+  <option value="great-vibes">Great Vibes</option>
+  <option value="allura">Allura</option>
+  <option value="satisfy">Satisfy</option>
+  <option value="sacramento">Sacramento</option>
+  <option value="kaushan-script">Kaushan Script</option>
+  </optgroup>
+</select>
+<h2>Class / Position</h2>
+  <select id="fontsss">
+  <optgroup label="Normal">
+    <option value="arial">Arial</option>
+  <option value="helvetica">Helvetica</option>
+  <option value="times-new-roman">Times New Roman</option>
+  <option value="georgia">Georgia</option>
+  <option value="verdana">Verdana</option>
+  <option value="tahoma">Tahoma</option>
+  <option value="trebuchet-ms">Trebuchet MS</option>
+  <option value="palatino">Palatino</option>
+  <option value="garamond">Garamond</option>
+  <option value="courier-new">Courier New</option>
+  </optgroup>
+  <optgroup label="Cursive">
+     <option value="brush-script-mt">Brush Script MT</option>
+  <option value="lucida-handwriting">Lucida Handwriting</option>
+  <option value="segoe-script">Segoe Script</option>
+  <option value="pacifico">Pacifico</option>
+  <option value="dancing-script">Dancing Script</option>
+  <option value="great-vibes">Great Vibes</option>
+  <option value="allura">Allura</option>
+  <option value="satisfy">Satisfy</option>
+  <option value="sacramento">Sacramento</option>
+  <option value="kaushan-script">Kaushan Script</option>
+  </optgroup>
+</select>
+     <button type="submit" onclick="closefonts()">×</button>
+   </div>
+
+   <!-- other style -->
+
+   <div class="other">
+     <h2>Name</h2><hr>
+     <div class="otherflex">
+       <button onclick="boldn()"><b>B</b></button><button onclick="undern()"><u>U</u></button><button onclick="aan()">Aa</button>
+     </div>
+     <h2>Class / Position</h2><hr>
+     <div class="otherflexx">
+        <button onclick="boldc()"><b>B</b></button><button onclick="aac()">Aa</button>
+     </div>
+     <span onclick="closeother()">x</span>
+   </div>   
+
+<!-- templetes -->
+
+<div class="templetes">
+  <h3><i class="fa-solid fa-list"></i> Templetes</h3><hr>
+  <ul>
+    <li onclick="op(bg.jpg)"><div class="imgbox"><img src="bg.jpg"></div>Templetes 1</li>
+      <li onclick="op(bg2.jpg)"><div class="imgbox"><img src="bg2.jpg"></div>Templetes 2</li>
+    <li onclick="op(bg1.jpg)"><div class="imgbox"><img src="bg1.jpg"></div>Templetes 3</li>
+      <li onclick="op(bg3.jpg)"><div class="imgbox"><img src="bg3.jpg"></div>Templetes 4</li>
+  </ul>
+  <span onclick="closetemp()">x</span>
+</div>
+
+<!-- size -->
+
+<div class="size">
+  <h3><i class="fa-solid fa-maximize"></i> Size</h3>
+  <hr>
+
+  <h5>Name</h5>
+  <input type="range" name="namesize" id="namesize" min="0" max="100" value="50">
+  <span id="namesize-value">50</span>
+
+  <h5>Class / Position</h5>
+  <input type="range" name="classsize" id="classsize" min="0" max="100" value="50">
+  <span id="classsize-value">50</span>
+  <hr>
+  <button onclick="closesize()">x</button>
+</div>
+
+<!-- scripts here -->
+
+   <script src="main.js" type="text/javascript" charset="utf-8"></script>
+   <script src="color.js" type="text/javascript" charset="utf-8"></script>
+  <script src="submit.js" type="text/javascript" charset="utf-8"></script>
+
+   <script src="https://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/js/nepali.datepicker.v4.0.1.min.js" type="text/javascript"></script>
+    <script src="/path/to/local/nepali.datepicker.min.js" type="text/javascript"></script>
+  </body>
+</html>
