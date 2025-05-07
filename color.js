@@ -5,7 +5,7 @@ const fontss = document.querySelector('#fontss');
 const fontsss = document.querySelector('#fontsss');
 const ncolor = document.querySelector('#ncolor');
 const cpcolor = document.querySelector('#cpcolor');
-const dtcolor = document.querySelectro('#dtcolor');
+const dtcolor = document.querySelector('#dtcolor');
 ncolor.addEventListener('input', () => {
   nameElement.style.color = ncolor.value;
 });
