@@ -1,10 +1,11 @@
 const nameElement = document.querySelector('.result h1');
 const classElement = document.querySelector('.result h4');
+const dateElement = document.querySelector('.result h5');
 const fontss = document.querySelector('#fontss');
 const fontsss = document.querySelector('#fontsss');
 const ncolor = document.querySelector('#ncolor');
 const cpcolor = document.querySelector('#cpcolor');
-
+const dtcolor = document.querySelectro('#dtcolor');
 ncolor.addEventListener('input', () => {
   nameElement.style.color = ncolor.value;
 });
@@ -12,7 +13,9 @@ ncolor.addEventListener('input', () => {
 cpcolor.addEventListener('input', () => {
   classElement.style.color = cpcolor.value;
 });
-
+dtcolor.addEventListener('input', () => {
+  dateElement.style.color = dtcolor.value;
+});
 
 
 
